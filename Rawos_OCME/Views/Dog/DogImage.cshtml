@@ -5,12 +5,12 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<!-- Botón para obtener una nueva imagen -->
+
 <form method="get" action="/">
     <button type="submit">Obtener Perro Aleatorio</button>
 </form>
 
-<!-- Mostrar la imagen si ViewData["ImageUrl"] no está vacío -->
+
 @if (!string.IsNullOrEmpty(ViewData["ImageUrl"]?.ToString()))
 {
     <br />
